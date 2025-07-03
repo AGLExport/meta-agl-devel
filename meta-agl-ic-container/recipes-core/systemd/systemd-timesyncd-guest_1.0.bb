@@ -9,7 +9,7 @@ SRC_URI = " \
     "
 
 do_install() {
-    install -D -m644 ${WORKDIR}/timesyncd-run-guest.conf ${D}/${systemd_system_unitdir}/systemd-timesyncd.service.d/timesyncd-run-guest.conf
+    install -D -m644 ${UNPACKDIR}/timesyncd-run-guest.conf ${D}/${systemd_system_unitdir}/systemd-timesyncd.service.d/timesyncd-run-guest.conf
 }
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
