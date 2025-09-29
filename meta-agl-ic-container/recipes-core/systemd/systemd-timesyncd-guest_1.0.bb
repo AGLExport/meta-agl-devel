@@ -8,6 +8,8 @@ SRC_URI = " \
     file://timesyncd-run-guest.conf \
     "
 
+S = "${UNPACKDIR}"
+
 do_install() {
     install -D -m644 ${UNPACKDIR}/timesyncd-run-guest.conf ${D}/${systemd_system_unitdir}/systemd-timesyncd.service.d/timesyncd-run-guest.conf
 }
