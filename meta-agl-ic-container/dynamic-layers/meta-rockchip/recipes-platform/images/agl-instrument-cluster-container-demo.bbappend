@@ -4,6 +4,7 @@ WKS_FILES:prepend = " \
 "
 
 IMAGE_INSTALL:append = " \
+     linux-firmware-mali-csffw-arch108 \
      linux-firmware-rtl8822 \
      linux-firmware-rtl8125 \
 "
